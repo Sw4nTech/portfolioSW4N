@@ -60,7 +60,6 @@ hamburger.addEventListener('click', () => { mobileMenu.classList.toggle('active'
 mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileMenu.classList.remove('active')));
 
 /* ===== HERO PARALLAX ===== */
-gsap.to('.hero-content', { y: 250, opacity: 0, scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: 1.5 } });
 gsap.to('.hero-bg-text', { y: -150, scale: 1.4, scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: 1.5 } });
 gsap.to('#heroCanvas', { opacity: 0, scrollTrigger: { trigger: '.hero', start: '50% top', end: 'bottom top', scrub: 1 } });
 

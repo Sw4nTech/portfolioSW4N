@@ -1,305 +1,447 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SW4N — Digital Agency | Landing Pages & Apps</title>
-  <meta name="description" content="SW4N is a creative digital agency specializing in premium landing pages, mobile apps, and web applications that convert.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<!-- Noise Overlay -->
-<div class="noise-overlay"></div>
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SW4N — Agência Digital | Landing Pages & Apps</title>
+    <meta
+      name="description"
+      content="A SW4N é uma agência digital criativa especializada em landing pages premium, aplicativos mobile e aplicações web que convertem."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+  </head>
+  <body>
+    <div class="noise-overlay"></div>
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
 
-<!-- Custom Cursor -->
-<div class="cursor-dot"></div>
-<div class="cursor-ring"></div>
+    <div class="loader">
+      <img src="assets/swan-icon.png" alt="SW4N" class="loader-logo" />
+      <div class="loader-bar"><span></span></div>
+      <div class="loader-text">Carregando Experiência</div>
+    </div>
 
-<!-- Loader -->
-<div class="loader">
-  <img src="assets/swan-icon.png" alt="SW4N" class="loader-logo">
-  <div class="loader-bar"><span></span></div>
-  <div class="loader-text">Loading Experience</div>
-</div>
+    <nav class="nav" id="nav">
+      <img src="assets/sw4n-text.png" alt="SW4N" class="nav-logo" />
+      <ul class="nav-links">
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#services">Serviços</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#process">Processo</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
 
-<!-- Navigation -->
-<nav class="nav" id="nav">
-  <img src="assets/sw4n-text.png" alt="SW4N" class="nav-logo">
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#process">Process</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-  <div class="hamburger" id="hamburger">
-    <span></span><span></span><span></span>
-  </div>
-</nav>
+    <div class="mobile-menu">
+      <a href="#about">Sobre</a>
+      <a href="#services">Serviços</a>
+      <a href="#projects">Projetos</a>
+      <a href="#process">Processo</a>
+      <a href="#contact">Contato</a>
+    </div>
 
-<!-- Mobile Menu -->
-<div class="mobile-menu">
-  <a href="#about">About</a>
-  <a href="#services">Services</a>
-  <a href="#projects">Projects</a>
-  <a href="#process">Process</a>
-  <a href="#contact">Contact</a>
-</div>
+    <section class="hero" id="hero">
+      <canvas id="heroCanvas" class="hero-canvas"></canvas>
+      <div class="hero-bg-text" aria-hidden="true">SW4N</div>
+      <div class="hero-content">
+        <div class="hero-badge"><span></span> Agência Digital</div>
+        <h1 class="split-text">
+          <div class="line"><span class="thin">Nós Criamos</span></div>
+          <div class="line">
+            <span class="gradient">Experiências</span> <span>Digitais</span>
+          </div>
+        </h1>
+        <p class="hero-sub">
+          Landing pages premium e aplicativos mobile criados com precisão.
+          Transformamos ideias ousadas em produtos digitais de alta conversão.
+        </p>
+        <a href="#projects" class="hero-cta">
+          <span>Ver Nosso Trabalho</span>
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg>
+        </a>
+      </div>
+      <div class="scroll-indicator">
+        <span>Rolar</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
 
-<!-- Hero -->
-<section class="hero" id="hero">
-  <canvas id="heroCanvas" class="hero-canvas"></canvas>
-  <div class="hero-bg-text" aria-hidden="true">SW4N</div>
-  <div class="hero-content">
-    <div class="hero-badge"><span></span> Digital Agency</div>
-    <h1 class="split-text">
-      <div class="line"><span class="thin">We Build</span></div>
-      <div class="line"><span class="gradient">Digital</span> <span>Experiences</span></div>
-    </h1>
-    <p class="hero-sub">Premium landing pages & mobile apps crafted with precision. We transform bold ideas into high-converting digital products.</p>
-    <a href="#projects" class="hero-cta">
-      <span>View Our Work</span>
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-    </a>
-  </div>
-  <div class="scroll-indicator">
-    <span>Scroll</span>
-    <div class="scroll-line"></div>
-  </div>
-</section>
+    <div class="marquee">
+      <div class="marquee-track">
+        <span class="marquee-item"
+          ><span class="dot"></span> Landing Pages</span
+        >
+        <span class="marquee-item"><span class="dot"></span> Apps Mobile</span>
+        <span class="marquee-item"
+          ><span class="dot"></span> Aplicações Web</span
+        >
+        <span class="marquee-item"><span class="dot"></span> Design UI/UX</span>
+        <span class="marquee-item"><span class="dot"></span> Branding</span>
+        <span class="marquee-item"><span class="dot"></span> SEO</span>
+        <span class="marquee-item"
+          ><span class="dot"></span> Landing Pages</span
+        >
+        <span class="marquee-item"><span class="dot"></span> Apps Mobile</span>
+        <span class="marquee-item"
+          ><span class="dot"></span> Aplicações Web</span
+        >
+        <span class="marquee-item"><span class="dot"></span> Design UI/UX</span>
+        <span class="marquee-item"><span class="dot"></span> Branding</span>
+        <span class="marquee-item"><span class="dot"></span> SEO</span>
+      </div>
+    </div>
 
-<!-- Marquee -->
-<div class="marquee">
-  <div class="marquee-track">
-    <span class="marquee-item"><span class="dot"></span> Landing Pages</span>
-    <span class="marquee-item"><span class="dot"></span> Mobile Apps</span>
-    <span class="marquee-item"><span class="dot"></span> Web Apps</span>
-    <span class="marquee-item"><span class="dot"></span> UI/UX Design</span>
-    <span class="marquee-item"><span class="dot"></span> Branding</span>
-    <span class="marquee-item"><span class="dot"></span> SEO</span>
-    <span class="marquee-item"><span class="dot"></span> Landing Pages</span>
-    <span class="marquee-item"><span class="dot"></span> Mobile Apps</span>
-    <span class="marquee-item"><span class="dot"></span> Web Apps</span>
-    <span class="marquee-item"><span class="dot"></span> UI/UX Design</span>
-    <span class="marquee-item"><span class="dot"></span> Branding</span>
-    <span class="marquee-item"><span class="dot"></span> SEO</span>
-  </div>
-</div>
-
-<!-- About -->
-<section class="about" id="about">
-  <div class="about-visual">
-    <div class="about-img">
-      <img src="assets/swan-icon.png" alt="SW4N Swan" class="swan-logo">
-    </div>
-    <div class="about-float">
-      <div class="about-float-number">5+</div>
-      <div class="about-float-text">Years of Excellence</div>
-    </div>
-  </div>
-  <div class="about-text">
-    <div class="section-label">Who We Are</div>
-    <h2 class="section-title">A Digital Company<br>Beyond The Ordinary</h2>
-    <p class="section-desc">At SW4N, we don't just build websites — we craft digital experiences that captivate, convert, and scale. Every pixel has a purpose, every interaction tells a story.</p>
-    <div class="about-stats">
-      <div class="stat">
-        <div class="stat-num" data-target="120" data-suffix="+">0</div>
-        <div class="stat-label">Projects Delivered</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num" data-target="50" data-suffix="+">0</div>
-        <div class="stat-label">Happy Clients</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num" data-target="98" data-suffix="%">0</div>
-        <div class="stat-label">Client Retention</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num" data-target="15" data-suffix="+">0</div>
-        <div class="stat-label">Team Members</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Services -->
-<section id="services">
-  <div>
-    <div class="section-label">What We Do</div>
-    <h2 class="section-title">Services That Drive<br>Digital Growth</h2>
-    <p class="section-desc">From concept to launch, we provide end-to-end digital solutions tailored to your brand's unique needs.</p>
-  </div>
-  <div class="services-grid">
-    <div class="service-card">
-      <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
-      <h3>Landing Pages</h3>
-      <p>High-converting landing pages designed to captivate visitors and maximize your ROI from the first click.</p>
-    </div>
-    <div class="service-card">
-      <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
-      <h3>Mobile Apps</h3>
-      <p>Native and cross-platform mobile applications built for performance, scalability, and seamless user experiences.</p>
-    </div>
-    <div class="service-card">
-      <div class="service-icon"><i class="fas fa-code"></i></div>
-      <h3>Web Applications</h3>
-      <p>Complex web apps with robust architectures, built on modern tech stacks to support your business growth.</p>
-    </div>
-    <div class="service-card">
-      <div class="service-icon"><i class="fas fa-palette"></i></div>
-      <h3>UI/UX Design</h3>
-      <p>User-centered design where aesthetics meet functionality, creating interfaces that users love to interact with.</p>
-    </div>
-    <div class="service-card">
-      <div class="service-icon"><i class="fas fa-bullhorn"></i></div>
-      <h3>Digital Marketing</h3>
-      <p>Data-driven marketing strategies that boost visibility, engagement, and measurable business results.</p>
-    </div>
-    <div class="service-card">
-      <div class="service-icon"><i class="fas fa-layer-group"></i></div>
-      <h3>Brand Identity</h3>
-      <p>Comprehensive branding solutions that establish a strong, memorable presence in the digital landscape.</p>
-    </div>
-  </div>
-</section>
-
-<!-- Projects -->
-<section id="projects">
-  <div>
-    <div class="section-label">Our Work</div>
-    <h2 class="section-title">Selected Projects</h2>
-    <p class="section-desc">A showcase of digital solutions we've crafted for clients across industries.</p>
-  </div>
-  <div class="projects-grid">
-    <div class="project-card">
-      <div class="project-img">
-        <img src="assets/project-landing.png" alt="FinVault Landing Page" onerror="this.src='https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop'">
-      </div>
-      <div class="project-info">
-        <div class="project-tag">Landing Page</div>
-        <h3>FinVault — Fintech Platform</h3>
-        <p>A high-converting landing page for a next-gen fintech startup with 3D visuals and smooth animations.</p>
-      </div>
-    </div>
-    <div class="project-card">
-      <div class="project-img">
-        <img src="assets/project-app.png" alt="FitPulse App" onerror="this.src='https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=500&fit=crop'">
-      </div>
-      <div class="project-info">
-        <div class="project-tag">Mobile App</div>
-        <h3>FitPulse — Fitness Tracker</h3>
-        <p>A premium fitness app with real-time tracking, social features, and a sleek dark interface.</p>
-      </div>
-    </div>
-    <div class="project-card">
-      <div class="project-img">
-        <img src="assets/project-ecommerce.png" alt="Luxe Store" onerror="this.src='https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&h=500&fit=crop'">
-      </div>
-      <div class="project-info">
-        <div class="project-tag">E-Commerce</div>
-        <h3>LUXĒ — Fashion Store</h3>
-        <p>A luxury e-commerce experience with advanced filtering, AR try-on, and seamless checkout flow.</p>
-      </div>
-    </div>
-    <div class="project-card">
-      <div class="project-img">
-        <img src="assets/project-dashboard.png" alt="DataCore Dashboard" onerror="this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop'">
-      </div>
-      <div class="project-info">
-        <div class="project-tag">Web App</div>
-        <h3>DataCore — Analytics Dashboard</h3>
-        <p>A SaaS analytics platform with real-time data visualization and AI-powered insights.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Process -->
-<section id="process">
-  <div style="text-align:center; margin-bottom: 20px;">
-    <div class="section-label" style="justify-content:center">How We Work</div>
-    <h2 class="section-title">Our Process</h2>
-    <p class="section-desc" style="margin: 0 auto">A proven methodology that turns your vision into a polished digital reality.</p>
-  </div>
-  <div class="process-timeline">
-    <div class="process-step">
-      <div class="process-num">01</div>
-      <h3>Discovery</h3>
-      <p>Deep dive into your brand, audience, and goals to define the project foundation.</p>
-    </div>
-    <div class="process-step">
-      <div class="process-num">02</div>
-      <h3>Design</h3>
-      <p>Wireframes, prototypes, and visual design that brings your vision to life.</p>
-    </div>
-    <div class="process-step">
-      <div class="process-num">03</div>
-      <h3>Develop</h3>
-      <p>Clean, performant code built with modern tech stacks for scalability.</p>
-    </div>
-    <div class="process-step">
-      <div class="process-num">04</div>
-      <h3>Launch</h3>
-      <p>Rigorous testing, optimization, and deployment with ongoing support.</p>
-    </div>
-  </div>
-</section>
-
-<!-- Testimonial -->
-<section id="testimonials">
-  <div style="text-align:center; margin-bottom: 20px;">
-    <div class="section-label" style="justify-content:center">Testimonials</div>
-    <h2 class="section-title">What Clients Say</h2>
-  </div>
-  <div class="testimonials-wrapper">
-    <div class="testimonial-card">
-      <blockquote>"SW4N transformed our online presence completely. Their attention to detail and creative approach resulted in a landing page that tripled our conversion rate."</blockquote>
-      <div class="testimonial-author">
-        <div class="testimonial-avatar">MR</div>
-        <div>
-          <div class="testimonial-name">Marcus Reynolds</div>
-          <div class="testimonial-role">CEO, FinVault</div>
+    <section class="about" id="about">
+      <div class="about-visual">
+        <div class="about-img">
+          <img src="assets/swan-icon.png" alt="Cisne SW4N" class="swan-logo" />
+        </div>
+        <div class="about-float">
+          <div class="about-float-number">5+</div>
+          <div class="about-float-text">Anos de Excelência</div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+      <div class="about-text">
+        <div class="section-label">Quem Somos</div>
+        <h2 class="section-title">Uma Empresa Digital<br />Além do Comum</h2>
+        <p class="section-desc">
+          Na SW4N, nós não apenas criamos sites — criamos experiências digitais
+          que encantam, convertem e escalam. Cada pixel tem um propósito, cada
+          interação conta uma história.
+        </p>
+        <div class="about-stats">
+          <div class="stat">
+            <div class="stat-num" data-target="120" data-suffix="+">0</div>
+            <div class="stat-label">Projetos Entregues</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num" data-target="50" data-suffix="+">0</div>
+            <div class="stat-label">Clientes Satisfeitos</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num" data-target="98" data-suffix="%">0</div>
+            <div class="stat-label">Retenção de Clientes</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num" data-target="15" data-suffix="+">0</div>
+            <div class="stat-label">Membros da Equipe</div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<!-- Contact -->
-<section class="contact" id="contact">
-  <div>
-    <div class="section-label" style="justify-content:center">Get In Touch</div>
-    <h2 class="section-title">Let's Build Something<br>Extraordinary</h2>
-    <p class="section-desc" style="margin: 0 auto">Ready to elevate your digital presence? Tell us about your project and let's create something remarkable together.</p>
-  </div>
-  <form class="contact-form" onsubmit="event.preventDefault(); alert('Thank you! We\'ll be in touch soon.');">
-    <div class="form-row">
-      <input class="form-field" type="text" placeholder="Your Name" required id="contact-name">
-      <input class="form-field" type="email" placeholder="Your Email" required id="contact-email">
-    </div>
-    <input class="form-field" type="text" placeholder="Subject" id="contact-subject">
-    <textarea class="form-field" placeholder="Tell us about your project..." required id="contact-message"></textarea>
-    <button class="submit-btn" type="submit" id="contact-submit">Send Message</button>
-  </form>
-</section>
+    <section id="services">
+      <div>
+        <div class="section-label">O Que Fazemos</div>
+        <h2 class="section-title">
+          Serviços Que Impulsionam<br />O Crescimento Digital
+        </h2>
+        <p class="section-desc">
+          Do conceito ao lançamento, oferecemos soluções digitais completas
+          adaptadas às necessidades únicas da sua marca.
+        </p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+          <h3>Landing Pages</h3>
+          <p>
+            Landing pages de alta conversão criadas para atrair visitantes e
+            maximizar seu ROI desde o primeiro clique.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+          <h3>Apps Mobile</h3>
+          <p>
+            Aplicativos nativos e multiplataforma desenvolvidos para
+            performance, escalabilidade e experiências fluidas.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-code"></i></div>
+          <h3>Aplicações Web</h3>
+          <p>
+            Aplicações web complexas com arquiteturas robustas, criadas com
+            tecnologias modernas para apoiar o crescimento do seu negócio.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-palette"></i></div>
+          <h3>Design UI/UX</h3>
+          <p>
+            Design centrado no usuário, onde estética e funcionalidade se unem
+            para criar interfaces que as pessoas adoram usar.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-bullhorn"></i></div>
+          <h3>Marketing Digital</h3>
+          <p>
+            Estratégias orientadas por dados que aumentam visibilidade,
+            engajamento e resultados mensuráveis.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-layer-group"></i></div>
+          <h3>Identidade Visual</h3>
+          <p>
+            Soluções completas de branding que estabelecem uma presença forte e
+            memorável no ambiente digital.
+          </p>
+        </div>
+      </div>
+    </section>
 
-<!-- Footer -->
-<footer class="footer">
-  <img src="assets/sw4n-text.png" alt="SW4N" class="footer-logo">
-  <p>&copy; 2026 SW4N. All rights reserved.</p>
-  <div class="footer-socials">
-    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-    <a href="#" aria-label="Behance"><i class="fab fa-behance"></i></a>
-    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-  </div>
-</footer>
+    <section id="projects">
+      <div>
+        <div class="section-label">Nosso Trabalho</div>
+        <h2 class="section-title">Projetos Selecionados</h2>
+        <p class="section-desc">
+          Uma seleção de soluções digitais que criamos para clientes de
+          diferentes segmentos.
+        </p>
+      </div>
+      <div class="projects-grid">
+        <a href="https://3d-image-slider-alpha.vercel.app/" target="_blank">
+          <div class="project-card">
+            <div class="project-img">
+              <img
+                src="assets/project-3d.png"
+                alt="Landing Page 3D Slider"
+                onerror="
+                  this.src =
+                    'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop'
+                "
+              />
+            </div>
+            <div class="project-info">
+              <div class="project-tag">Landing Page</div>
+              <h3>3D Slider</h3>
+              <p>
+                Uma landing page conceitual que mistura arte digital,
+                profundidade 3D e visual futurista para criar uma experiência
+                imersiva.
+              </p>
+            </div>
+          </div>
+        </a>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="script.js"></script>
-</body>
+        <a href="https://itsguimo-portfolio.vercel.app/" target="_blank">
+          <div class="project-card">
+            <div class="project-img">
+              <img
+                src="assets/project-guimo.png"
+                alt="Guimo Portfólio"
+                onerror=""
+              />
+            </div>
+            <div class="project-info">
+              <div class="project-tag">Landing Page</div>
+              <h3>Portfólio Digital</h3>
+              <p>
+                Uma landing page criada para destacar identidade visual,
+                personalidade e presença digital de forma moderna e impactante.
+              </p>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://portfolio-lac-seven-ma30sjo4et.vercel.app/" target="_blank">
+          <div class="project-card">
+            <div class="project-img">
+              <img src="assets/project-cp.png" alt="CP Portfólio" onerror="" />
+            </div>
+            <div class="project-info">
+              <div class="project-tag">Landing Page</div>
+              <h3>Portfólio Digital</h3>
+              <p>
+                Uma landing page moderna focada em transmitir inovação,
+                tecnologia e visão estratégica através de uma interface limpa e
+                impactante.
+              </p>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://cardapio-click-seven.vercel.app/" target="_blank">
+          <div class="project-card">
+            <div class="project-img">
+              <img
+                src="assets/project-cardapio.png"
+                alt="Cardápio Click"
+                onerror=""
+              />
+            </div>
+            <div class="project-info">
+              <div class="project-tag">Landing Page</div>
+              <h3>Cardápio Click</h3>
+              <p>
+                Uma landing page desenvolvida para apresentar cardápios digitais
+                de forma elegante, prática e moderna.
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section id="process">
+      <div style="text-align: center; margin-bottom: 20px">
+        <div class="section-label" style="justify-content: center">
+          Como Trabalhamos
+        </div>
+        <h2 class="section-title">Nosso Processo</h2>
+        <p class="section-desc" style="margin: 0 auto">
+          Uma metodologia comprovada que transforma sua visão em uma realidade
+          digital refinada.
+        </p>
+      </div>
+      <div class="process-timeline">
+        <div class="process-step">
+          <div class="process-num">01</div>
+          <h3>Descoberta</h3>
+          <p>
+            Um mergulho profundo na sua marca, público e objetivos para definir
+            a base do projeto.
+          </p>
+        </div>
+        <div class="process-step">
+          <div class="process-num">02</div>
+          <h3>Design</h3>
+          <p>
+            Wireframes, protótipos e design visual que dão vida à sua visão.
+          </p>
+        </div>
+        <div class="process-step">
+          <div class="process-num">03</div>
+          <h3>Desenvolvimento</h3>
+          <p>
+            Código limpo e performático, criado com tecnologias modernas para
+            garantir escalabilidade.
+          </p>
+        </div>
+        <div class="process-step">
+          <div class="process-num">04</div>
+          <h3>Lançamento</h3>
+          <p>Testes rigorosos, otimização e publicação com suporte contínuo.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <div style="text-align: center; margin-bottom: 20px">
+        <div class="section-label" style="justify-content: center">
+          Depoimentos
+        </div>
+        <h2 class="section-title">O Que Nossos Clientes Dizem</h2>
+      </div>
+      <div class="testimonials-wrapper">
+        <div class="testimonial-card">
+          <blockquote>
+            "A SW4N transformou completamente nossa presença online. A atenção
+            aos detalhes e a abordagem criativa resultaram em uma landing page
+            que triplicou nossa taxa de conversão."
+          </blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">MR</div>
+            <div>
+              <div class="testimonial-name">Marcus Reynolds</div>
+              <div class="testimonial-role">CEO, FinVault</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div>
+        <div class="section-label" style="justify-content: center">
+          Entre em Contato
+        </div>
+        <h2 class="section-title">Vamos Criar Algo<br />Extraordinário</h2>
+        <p class="section-desc" style="margin: 0 auto">
+          Pronto para elevar sua presença digital? Conte-nos sobre seu projeto e
+          vamos criar algo marcante juntos.
+        </p>
+      </div>
+      <form
+        class="contact-form"
+        onsubmit="
+          event.preventDefault();
+          alert('Obrigado! Entraremos em contato em breve.');
+        "
+      >
+        <div class="form-row">
+          <input
+            class="form-field"
+            type="text"
+            placeholder="Seu Nome"
+            required
+            id="contact-name"
+          />
+          <input
+            class="form-field"
+            type="email"
+            placeholder="Seu Email"
+            required
+            id="contact-email"
+          />
+        </div>
+        <input
+          class="form-field"
+          type="text"
+          placeholder="Assunto"
+          id="contact-subject"
+        />
+        <textarea
+          class="form-field"
+          placeholder="Conte-nos sobre seu projeto..."
+          required
+          id="contact-message"
+        ></textarea>
+        <button class="submit-btn" type="submit" id="contact-submit">
+          Enviar Mensagem
+        </button>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <img src="assets/sw4n-text.png" alt="SW4N" class="footer-logo" />
+      <p>&copy; 2026 SW4N. Todos os direitos reservados.</p>
+      <div class="footer-socials">
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" aria-label="Behance"><i class="fab fa-behance"></i></a>
+        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
