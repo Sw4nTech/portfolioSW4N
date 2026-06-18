@@ -18,7 +18,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
   </head>
   <body>
     <div class="noise-overlay"></div>
@@ -242,8 +242,8 @@
               <div class="project-tag">Landing Page</div>
               <h3>Landing Page Pizzaria</h3>
               <p>
-                Uma landing page criada para pizzarias que buscam
-                um visual mais impactante e moderno.
+                Uma landing page criada para pizzarias que buscam um visual mais
+                impactante e moderno.
               </p>
             </div>
           </div>
@@ -269,7 +269,10 @@
           </div>
         </a>
 
-        <a href="https://portfolio-lac-seven-ma30sjo4et.vercel.app/" target="_blank">
+        <a
+          href="https://portfolio-lac-seven-ma30sjo4et.vercel.app/"
+          target="_blank"
+        >
           <div class="project-card">
             <div class="project-img">
               <img src="assets/project-cp.png" alt="CP Portfólio" onerror="" />
@@ -389,42 +392,41 @@
       </div>
       <form
         class="contact-form"
-        onsubmit="
-          event.preventDefault();
-          alert('Obrigado! Entraremos em contato em breve.');
-        "
+        action="https://formsubmit.co/sw4ncontato@gmail.com"
+        method="POST"
       >
         <div class="form-row">
           <input
             class="form-field"
             type="text"
+            name="nome"
             placeholder="Seu Nome"
             required
-            id="contact-name"
           />
           <input
             class="form-field"
             type="email"
+            name="email"
             placeholder="Seu Email"
             required
-            id="contact-email"
           />
         </div>
+
         <input
           class="form-field"
           type="text"
+          name="assunto"
           placeholder="Assunto"
-          id="contact-subject"
         />
+
         <textarea
           class="form-field"
+          name="mensagem"
           placeholder="Conte-nos sobre seu projeto..."
           required
-          id="contact-message"
         ></textarea>
-        <button class="submit-btn" type="submit" id="contact-submit">
-          Enviar Mensagem
-        </button>
+
+        <button class="submit-btn" type="submit">Enviar Mensagem</button>
       </form>
     </section>
 
@@ -432,8 +434,14 @@
       <img src="assets/sw4n-text.png" alt="SW4N" class="footer-logo" />
       <p>&copy; 2026 SW4N. Todos os direitos reservados.</p>
       <div class="footer-socials">
-        <a href="https://www.instagram.com/sw4nstudio/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/company/sw4nstudio/about/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/sw4nstudio/" aria-label="Instagram"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/company/sw4nstudio/about/"
+          aria-label="LinkedIn"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
       </div>
     </footer>
 
